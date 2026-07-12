@@ -118,7 +118,7 @@ This static portfolio can be deployed using:
 * GitHub: [eliasmengestei](https://github.com/eliasmengestei)
 * Email: [mengesteielias7@gmail.com](mailto:mengesteielias@gmail.com)
 * linkde:[www.linkedin.com/in/elias-mengestei75]
-* instagram[e-m-g2175]
+* instagram:[e-m-g2175]
 * Location: Ethiopia
 
 ## License
