@@ -1,0 +1,25 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blog4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#373b44;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4286f4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#blog4Grad)"/>
+  <!-- Shopping cart icon -->
+  <circle cx="300" cy="150" r="75" fill="white" opacity="0.1"/>
+  <circle cx="300" cy="150" r="60" fill="white" opacity="0.9"/>
+  <!-- cart shape -->
+  <path d="M 272 130 L 276 150 L 296 150 L 330 150 L 326 130 Z" fill="#4286f4" opacity="0.8"/>
+  <circle cx="284" cy="162" r="6" fill="#4286f4"/>
+  <circle cx="316" cy="162" r="6" fill="#4286f4"/>
+  <line x1="266" y1="122" x2="272" y2="130" stroke="#4286f4" stroke-width="3"/>
+  <line x1="260" y1="122" x2="272" y2="122" stroke="#4286f4" stroke-width="3"/>
+  <!-- Category badge -->
+  <rect x="30" y="30" width="110" height="30" rx="15" fill="white" opacity="0.3"/>
+  <text x="85" y="50" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">E-Commerce</text>
+  <!-- Title -->
+  <text x="300" y="278" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="bold">Scalable E-Commerce</text>
+  <text x="300" y="312" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" opacity="0.9">Platform Strategies</text>
+  <text x="300" y="355" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" opacity="0.85">01 August, 2026</text>
+</svg>

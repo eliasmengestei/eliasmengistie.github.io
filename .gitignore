@@ -1,0 +1,51 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary Files
+*.tmp
+*.temp
+*.cache
+
+# Personal Files (Optional - uncomment if needed)
+# /images/profile.jpg
+# /assets/cv.pdf
+
+# Build Files (if using build tools)
+dist/
+build/
+.cache/
+
+# Dependencies (if using npm/yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# Backup Files
+*.bak
+*.backup
+*-backup.*

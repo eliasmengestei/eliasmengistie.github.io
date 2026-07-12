@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Web Designer & Developer">
+    <meta name="author" content="Alex Smith">
+    <title>Elias Mengistie - Web Developer Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="shortcut icon" href="images/favicon.svg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Profile Image -->
+            <div class="profile-img-wrapper">
+                <img src="./images/profile.png" alt="Alex Smith" class="profile-img" id="profileImg">
+            </div>
+
+            <!-- Name & Title -->
+            <h2 class="profile-name">Elias Mngistie</h2>
+            <p class="profile-title">AI Powered Fullstack Application Developer </p>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +251 0992687862</p>
+                <p><i class="fas fa-envelope"></i> alex@smith.com</p>
+            </div>
+
+            <!-- Download CV Button -->
+            <a href="assets/cv.pdf" class="btn-download" download>Download CV</a>
+
+            <!-- Copyright -->
+            <p class="copyright">&copy; 2026 All rights reserved.</p>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button class="sidebar-toggle d-lg-none" id="sidebarToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </aside>
+
+    <!-- Right Navigation -->
+    <nav class="right-nav">
+        <ul>
+            <li data-tooltip="About Me"><a href="#home" class="nav-link" data-section="home" title="About Me">
+                    <i class="fas fa-user"></i>
+                </a></li>
+            <li data-tooltip="Resume"><a href="#resume" class="nav-link" data-section="resume" title="Resume">
+                    <i class="fas fa-graduation-cap"></i>
+                </a></li>
+            <li data-tooltip="Portfolio"><a href="#portfolio" class="nav-link" data-section="portfolio"
+                    title="Portfolio">
+                    <i class="fas fa-briefcase"></i>
+                </a></li>
+            <li data-tooltip="Blog"><a href="#blog" class="nav-link" data-section="blog" title="Blog">
+                    <i class="fas fa-blog"></i>
+                </a></li>
+            <li data-tooltip="Contact"><a href="#contact" class="nav-link" data-section="contact" title="Contact">
+                    <i class="fas fa-envelope"></i>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container-fluid h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="home-content">
+                            <span class="subtitle">Full Stack Developer</span>
+                            <h1 class="display-3 fw-bold mb-4">Elias Mengistie</h1>
+                            <p class="lead mb-4">
+
+                                I am an IT graduate from the University of Gondar (UoG) with a passion for building
+                                seamless digital experiences.<br>
+
+
+                                I am currently diving deep into <span class="highlight-text">AI-powered application
+                                    development and AWS , Cloud computing. </span>I am driven by an intense curiosity to
+                                understand how things work and a relentless desire to build smart, efficient solutions
+                                to real-world problems.
+
+                            </p>
+                            <div class="home-buttons">
+                                <a href="assets/cv.pdf" class="btn btn-primary me-3" download>Download CV</a>
+                                <a href="#contact" class="btn btn-outline-light">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="home-image">
+                            <img src="./images/hero7.png" alt="Alex Smith" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What I Do Section (inside About Me) -->
+                <div class="what-i-do-section mt-5">
+                    <div class="section-header">
+                        <h2 class="section-title">What I Do</h2>
+                        <p class="section-subtitle">Services I Offer</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Static Website Development</h3>
+                                    <p>Building fast, secure, and responsive static websites tailored to your brand.
+                                        Perfect for landing pages, business portfolios, and blogs.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Custom HTML Templates</h3>
+                                    <p>Creating clean, well-structured, and reusable HTML/CSS templates. Fully
+                                        customizable and optimized for seamless cross-browser performance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <!-- <div class="service-content">
+                                    <h3>#</h3>
+                                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum
+                                        massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-flag"></i>
+                                </div>
+                                <!-- <div class="service-content">
+                                    <h3>#</h3>
+                                    <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum
+                                        massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2 class="section-title">Bachelor of Information Technology </h2>
+                    <p class="section-subtitle">University of Gondar (UoG)</p>
+                </div>
+
+                <div class="row">
+                    <!-- Education & Experience -->
+                    <div class="col-lg-6">
+                        <h3 class="resume-heading">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </h3>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">IT Graduate</span>
+                                <div class="timeline-content">
+                                    <h4></h4>
+                                    <p class="timeline-company">University of Studies</p>
+                                    <p>Gained hands-on experience in building software solutions and web applications
+                                        through academic projects at UoG. Focused heavily on modern frontend
+                                        technologies, system analysis, and translating user requirements into functional
+                                        web interfaces.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-date"></span>
+                                <div class="timeline-content">
+                                    <h4></h4>
+                                    <p class="timeline-company"></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="resume-heading mt-5">
+                            <i class="fas fa-briefcase"></i> Experience
+                        </h3>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2025</span>
+                                <div class="timeline-content">
+                                    <h4>internship </h4>
+                                    <p class="timeline-company">EEU</p>
+                                    <p>For 2 months Internship at Ethiopian Electric Utility
+                                        by Networking knowledge WAN,LAN And MAN how to server configure
+                                        and switch cables, ports configure
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="timeline-date">Graduate IT From UoG 2026</span>
+                                <div class="timeline-content">
+                                    <h4>Junior developer </h4>
+                                    <p class="timeline-company">self employed/freelance </p>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="timeline-item">
+                                <span class="timeline-date">2011 - 2013</span>
+                                <div class="timeline-content">
+                                    <h4>Junior UI/UX Designer</h4>
+                                    <p class="timeline-company">Google</p>
+                                    <p>Duis mollis nunc quis quam viverra venenatis. Nulla nulla arcu, congue vitae nunc
+                                        ac, sodales ultricies diam. Nullam justo erat, tincidunt sit amet.</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- Skills
+                    <div class="col-lg-6">
+                        <h3 class="resume-heading">
+                            <i class="fas fa-pencil-ruler"></i> Design Skills
+                        </h3>
+
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Web Design</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Print Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Logo Design</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Graphic Design</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="resume-heading mt-5">
+                            <i class="fas fa-code"></i> Coding Skills
+                        </h3>
+
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>JavaScript</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>PHP</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>HTML/CSS</span>
+                                    <span>100%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Smarty/Twig</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Perl</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="resume-heading mt-5">
+                            <i class="fas fa-lightbulb"></i> Knowledges
+                        </h3>
+
+                        <div class="knowledges">
+                            <span class="badge-knowledge">Marketing</span>
+                            <span class="badge-knowledge">Print</span>
+                            <span class="badge-knowledge">Digital Design</span>
+                            <span class="badge-knowledge">Social Media</span>
+                            <span class="badge-knowledge">Time Management</span>
+                            <span class="badge-knowledge">Communication</span>
+                            <span class="badge-knowledge">Problem-Solving</span>
+                            <span class="badge-knowledge">Social Networking</span>
+                            <span class="badge-knowledge">Flexibility</span>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- Certificates Section -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h3 class="resume-heading">
+                            <i class="fas fa-certificate"></i> Certificates
+                        </h3>
+
+                        <div class="row cert-grid">
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="certificate-card">
+                                    <div class="certificate-logo">
+                                        <img src="./images/profile7.jpg" alt="Certificate Issuer Logo"
+                                            onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'cert-logo-text\'>GOLDENGRID</span>';">
+                                    </div>
+                                    <div class="certificate-content">
+                                        <h4>5 Million Ethiopian Coders</h4>
+                                        <p class="certificate-id">
+                                            <i class="fas fa-id-badge"></i>Membership
+                                        ID:www.udacity.com/
+                                        certificate/e
+                                        /fab7bfb4-5303-11ef-be69-573302b5a492
+                                        </p>
+                                        <p class="certificate-date">
+                                            <i class="far fa-calendar-alt"></i> October 27, 2024
+                                        </p>
+                                        <a href="./images/portfolio9.jpg" class="cert-view-btn">
+                                            <i class="fas fa-eye"></i> View Certificate
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="certificate-card">
+                                    <div class="certificate-logo">
+                                        <img src="images/cert-logo-2.png" alt="Certificate Issuer Logo"
+                                            onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'cert-logo-text\'>GOLDENGRID</span>';">
+                                    </div>
+                                    <div class="certificate-content">
+                                        <h4>Psychology of Internation Design</h4>
+                                        <p class="certificate-id">
+                                            <i class="fas fa-id-badge"></i> Membership ID: XXXX
+                                        </p>
+                                        <p class="certificate-date">
+                                            <i class="far fa-calendar-alt"></i> 19 April 2018
+                                        </p>
+                                        <a href="#" class="cert-view-btn">
+                                            <i class="fas fa-eye"></i> View Certificate
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <!-- <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="certificate-card">
+                                    <div class="certificate-logo">
+                                        <img src="images/cert-logo-3.png" alt="Certificate Issuer Logo"
+                                            onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'cert-logo-text\'>UDEMY</span>';">
+                                    </div>
+                                    <div class="certificate-content">
+                                        <h4>Advanced Web Development</h4>
+                                        <p class="certificate-id">
+                                            <i class="fas fa-id-badge"></i> Membership ID: XXXX
+                                        </p>
+                                        <p class="certificate-date">
+                                            <i class="far fa-calendar-alt"></i> 25 June 2019
+                                        </p>
+                                        <a href="#" class="cert-view-btn">
+                                            <i class="fas fa-eye"></i> View Certificate
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <!-- <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="certificate-card">
+                                    <div class="certificate-logo">
+                                        <img src="images/cert-logo-4.png" alt="Certificate Issuer Logo"
+                                            onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'cert-logo-text\'>COURSERA</span>';">
+                                    </div>
+                                    <div class="certificate-content">
+                                        <h4>UI/UX Design Specialization</h4>
+                                        <p class="certificate-id">
+                                            <i class="fas fa-id-badge"></i> Membership ID: XXXX
+                                        </p>
+                                        <p class="certificate-date">
+                                            <i class="far fa-calendar-alt"></i> 12 March 2020
+                                        </p>
+                                        <a href="#" class="cert-view-btn">
+                                            <i class="fas fa-eye"></i> View Certificate
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <!-- <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="certificate-card">
+                                    <div class="certificate-logo">
+                                        <img src="images/cert-logo-5.png" alt="Certificate Issuer Logo"
+                                            onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'cert-logo-text\'>FREECODECAMP</span>';">
+                                    </div>
+                                    <div class="certificate-content">
+                                        <h4>JavaScript Algorithms &amp; DS</h4>
+                                        <p class="certificate-id">
+                                            <i class="fas fa-id-badge"></i> Membership ID: XXXX
+                                        </p>
+                                        <p class="certificate-date">
+                                            <i class="far fa-calendar-alt"></i> 08 September 2021
+                                        </p>
+                                        <a href="#" class="cert-view-btn">
+                                            <i class="fas fa-eye"></i> View Certificate
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="certificate-card">
+                                    <div class="certificate-logo">
+                                        <img src="./images/certeficate.jpg" alt="Certificate Issuer Logo"
+                                            onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'cert-logo-text\'>META</span>';">
+                                    </div>
+                                    <div class="certificate-content">
+                                        <h4>Andromeda Computer and Software Training institute </h4>
+                                        <p class="certificate-id">
+                                            <i class="fas fa-id-badge"></i> Membership ID: ACO738/16
+                                        </p>
+                                        <p class="certificate-date">
+                                            <i class="far fa-calendar-alt"></i> December 07, 2023-January 24, 2024
+                                        </p>
+                                        <a href="./images/andromeda.jpg" class="cert-view-btn">
+                                            <i class="fas fa-eye"></i> View Certificate
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtitle">My Best Works</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="portfolio-filters mb-4">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="detailed">Detailed</button>
+                    <button class="filter-btn" data-filter="mockups">Mockups</button>
+                    <button class="filter-btn" data-filter="soundcloud">SoundCloud</button>
+                    <button class="filter-btn" data-filter="vimeo">Vimeo Videos</button>
+                    <button class="filter-btn" data-filter="youtube">YouTube Videos</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="row portfolio-grid">
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="mockups">
+                        <div class="portfolio-card">
+                            <img src="images/portfolio-1.jpg" alt="Project 1" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h4>Creative Design</h4>
+                                <p>Mockups</p>
+                                <a href="images/portfolio-1.jpg" class="portfolio-link">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="detailed">
+                        <div class="portfolio-card">
+                            <img src="images/portfolio-2.jpg" alt="Project 2" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h4>Architecture Building</h4>
+                                <p>Detailed</p>
+                                <a href="images/portfolio-2.jpg" class="portfolio-link">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="mockups">
+                        <div class="portfolio-card">
+                            <img src="images/portfolio-3.jpg" alt="Project 3" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h4>Brand Identity</h4>
+                                <p>Mockups</p>
+                                <a href="images/portfolio-3.jpg" class="portfolio-link">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="youtube">
+                        <div class="portfolio-card">
+                            <img src="images/portfolio-4.jpg" alt="Project 4" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h4>Video Production</h4>
+                                <p>YouTube</p>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="detailed">
+                        <div class="portfolio-card">
+                            <img src="images/portfolio-5.jpg" alt="Project 5" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h4>Web Development</h4>
+                                <p>Detailed</p>
+                                <a href="images/portfolio-5.jpg" class="portfolio-link">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="vimeo">
+                        <div class="portfolio-card">
+                            <img src="images/portfolio-6.jpg" alt="Project 6" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <h4>Motion Graphics</h4>
+                                <p>Vimeo</p>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <!-- <section id="blog" class="section">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2 class="section-title">Blog</h2>
+                    <p class="section-subtitle">My Diary</p>
+                </div>
+
+                <!-- Blog Filter -->
+                <!-- <div class="blog-filters mb-4">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ui">UI</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                </div> -->
+
+                <!-- Blog Grid -->
+                <!-- <div class="row blog-grid">
+                    <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="design">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog-1.jpg" alt="Blog Post 1" class="img-fluid">
+                                <span class="blog-category">Design</span>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-date">
+                                    <i class="far fa-calendar"></i> 09 May, 2026
+                                </p>
+                                <h4 class="blog-title">
+                                    <a href="#">Why I Switched to Sketch For UI Design</a>
+                                </h4>
+                                <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                    eiusmod tempor incididunt ut labore.</p>
+                                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="ecommerce">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog-2.jpg" alt="Blog Post 2" class="img-fluid">
+                                <span class="blog-category">WordPress</span>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-date">
+                                    <i class="far fa-calendar"></i> 15 June, 2026
+                                </p>
+                                <h4 class="blog-title">
+                                    <a href="#">How to Make a WordPress Plugin Extensible</a>
+                                </h4>
+                                <p class="blog-excerpt">Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="ui">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog-3.jpg" alt="Blog Post 3" class="img-fluid">
+                                <span class="blog-category">Design</span>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-date">
+                                    <i class="far fa-calendar"></i> 22 July, 2026
+                                </p>
+                                <h4 class="blog-title">
+                                    <a href="#">Top 10 UI Design Trends for 2026</a>
+                                </h4>
+                                <p class="blog-excerpt">Sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam.</p>
+                                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="ecommerce">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog-4.jpg" alt="Blog Post 4" class="img-fluid">
+                                <span class="blog-category">E-Commerce</span>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-date">
+                                    <i class="far fa-calendar"></i> 01 August, 2026
+                                </p>
+                                <h4 class="blog-title">
+                                    <a href="#">Building Scalable E-Commerce Platforms</a>
+                                </h4>
+                                <p class="blog-excerpt">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</p>
+                                <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">Get In Touch</p>
+                </div>
+
+                <!-- Contact Info Cards -->
+                <div class="row mb-5">
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <h4>Gondar</h4>
+                            <p>Ethiopia </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-card">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <h4>992687862</h4>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <h4>mengesteielias@gmail.com</h4>
+                            <p>Online Support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form TOP, Map BOTTOM -->
+
+                <!-- FORM - Top -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <h3 class="mb-4">How Can I Help You?</h3>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="fullname" id="fullname" class="form-control"
+                                        placeholder="Full Name" required>
+                                    <div class="invalid-feedback">Name is required.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Email Address" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="subject" id="subject" class="form-control"
+                                        placeholder="Subject" required>
+                                    <div class="invalid-feedback">Subject is required.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <textarea name="message" id="message" class="form-control" rows="3"
+                                        placeholder="Message" required></textarea>
+                                    <div class="invalid-feedback">Please, leave me a message.</div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- MAP - Bottom -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555090294!2d-122.507640937988!3d37.75767542590962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
