@@ -43,19 +43,20 @@
 
             <!-- Social Links -->
             <div class="social-links">
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.e_m_g2175" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https:www.linkedin.com/in/elias-mengestei75" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
             </div>
 
             <!-- Contact Info -->
             <div class="contact-info">
-                <p><i class="fas fa-phone"></i> +251 0992687862</p>
-                <p><i class="fas fa-envelope"></i> alex@smith.com</p>
+                <p><i class="fas fa-phone"></i> +251 992687862</p>
+                <p><i class="fas fa-envelope"></i>mengesteielias@gmail.com </p>
             </div>
 
             <!-- Download CV Button -->
-            <a href="assets/cv.pdf" class="btn-download" download>Download CV</a>
+            <a href="assets/Elias_Mengestei_Professional_CV.pdf" class="btn-download" download>Download CV</a>
 
             <!-- Copyright -->
             <p class="copyright">&copy; 2026 All rights reserved.</p>
@@ -80,9 +81,7 @@
                     title="Portfolio">
                     <i class="fas fa-briefcase"></i>
                 </a></li>
-            <li data-tooltip="Blog"><a href="#blog" class="nav-link" data-section="blog" title="Blog">
-                    <i class="fas fa-blog"></i>
-                </a></li>
+
             <li data-tooltip="Contact"><a href="#contact" class="nav-link" data-section="contact" title="Contact">
                     <i class="fas fa-envelope"></i>
                 </a></li>
@@ -113,7 +112,8 @@
 
                             </p>
                             <div class="home-buttons">
-                                <a href="assets/cv.pdf" class="btn btn-primary me-3" download>Download CV</a>
+                                <a href="assets/Elias_Mengestei_Professional_CV.pdf" class="btn btn-primary me-3"
+                                    download>Download CV</a>
                                 <a href="#contact" class="btn btn-outline-light">Contact</a>
                             </div>
                         </div>
@@ -406,9 +406,9 @@
                                         <h4>5 Million Ethiopian Coders</h4>
                                         <p class="certificate-id">
                                             <i class="fas fa-id-badge"></i>Membership
-                                        ID:www.udacity.com/
-                                        certificate/e
-                                        /fab7bfb4-5303-11ef-be69-573302b5a492
+                                            ID:www.udacity.com/
+                                            certificate/e
+                                            /fab7bfb4-5303-11ef-be69-573302b5a492
                                         </p>
                                         <p class="certificate-date">
                                             <i class="far fa-calendar-alt"></i> October 27, 2024
@@ -542,92 +542,68 @@
                 <!-- Filter Buttons -->
                 <div class="portfolio-filters mb-4">
                     <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="detailed">Detailed</button>
-                    <button class="filter-btn" data-filter="mockups">Mockups</button>
-                    <button class="filter-btn" data-filter="soundcloud">SoundCloud</button>
-                    <button class="filter-btn" data-filter="vimeo">Vimeo Videos</button>
-                    <button class="filter-btn" data-filter="youtube">YouTube Videos</button>
+                    <button class="filter-btn" data-filter="web">Web App</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
                 </div>
 
-                <!-- Portfolio Grid -->
+                <!-- =====================================================
+                     HOW TO ADD YOUR OWN PROJECT:
+                     1. Take a screenshot of your project and save it in the images/ folder
+                        e.g.  images/my-project.jpg
+                     2. Copy one of the project blocks below
+                     3. Change these 4 things:
+                        a) data-category  → web | mobile | ui | other
+                        b) img src        → your screenshot path
+                        c) <h4>           → your project name
+                        d) href on the link → your GitHub or live site URL
+                ===================================================== -->
                 <div class="row portfolio-grid">
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="mockups">
-                        <div class="portfolio-card">
-                            <img src="images/portfolio-1.jpg" alt="Project 1" class="img-fluid">
+
+                    <!-- PROJECT 1: Personal Portfolio Website -->
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
+                        <div class="portfolio-card"
+                            onclick="window.open('https://github.com/eliasmengestei/eliasmengistie.github.io','_blank')"
+                            style="cursor:pointer;">
+                            <img src="images/hero7.png" alt="Personal Portfolio Website" class="img-fluid">
                             <div class="portfolio-overlay">
-                                <h4>Creative Design</h4>
-                                <p>Mockups</p>
-                                <a href="images/portfolio-1.jpg" class="portfolio-link">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
+                                <h4>Personal Portfolio Website</h4>
+                                <p class="portfolio-desc">Responsive portfolio built with HTML, CSS, Bootstrap &
+                                    JavaScript.</p>
+                                <div class="portfolio-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Bootstrap</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <span class="portfolio-link"><i class="fab fa-github"></i></span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="detailed">
-                        <div class="portfolio-card">
-                            <img src="images/portfolio-2.jpg" alt="Project 2" class="img-fluid">
+                    <!-- PROJECT 2: Internship Career Management System -->
+                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
+                        <div class="portfolio-card"
+                            onclick="window.open('https://github.com/eliasmengestei/Internship-and-Career-Management-System-ICMS-','_blank')"
+                            style="cursor:pointer;">
+                            <img src="images/icms-project.jpg" alt="Internship Career Management System"
+                                class="img-fluid">
                             <div class="portfolio-overlay">
-                                <h4>Architecture Building</h4>
-                                <p>Detailed</p>
-                                <a href="images/portfolio-2.jpg" class="portfolio-link">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
+                                <h4>Internship Career Management System</h4>
+                                <p class="portfolio-desc">Full stack system for managing internships at University of
+                                    Gondar.</p>
+                                <div class="portfolio-tags">
+                                    <span>React</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>REST API</span>
+                                </div>
+                                <span class="portfolio-link"><i class="fab fa-github"></i></span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="mockups">
-                        <div class="portfolio-card">
-                            <img src="images/portfolio-3.jpg" alt="Project 3" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <h4>Brand Identity</h4>
-                                <p>Mockups</p>
-                                <a href="images/portfolio-3.jpg" class="portfolio-link">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="youtube">
-                        <div class="portfolio-card">
-                            <img src="images/portfolio-4.jpg" alt="Project 4" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <h4>Video Production</h4>
-                                <p>YouTube</p>
-                                <a href="#" class="portfolio-link">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="detailed">
-                        <div class="portfolio-card">
-                            <img src="images/portfolio-5.jpg" alt="Project 5" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <h4>Web Development</h4>
-                                <p>Detailed</p>
-                                <a href="images/portfolio-5.jpg" class="portfolio-link">
-                                    <i class="fas fa-search-plus"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="vimeo">
-                        <div class="portfolio-card">
-                            <img src="images/portfolio-6.jpg" alt="Project 6" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <h4>Motion Graphics</h4>
-                                <p>Vimeo</p>
-                                <a href="#" class="portfolio-link">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -641,15 +617,15 @@
                 </div>
 
                 <!-- Blog Filter -->
-                <!-- <div class="blog-filters mb-4">
+        <!-- <div class="blog-filters mb-4">
                     <button class="filter-btn active" data-filter="all">All</button>
                     <button class="filter-btn" data-filter="ui">UI</button>
                     <button class="filter-btn" data-filter="design">Design</button>
                     <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
                 </div> -->
 
-                <!-- Blog Grid -->
-                <!-- <div class="row blog-grid">
+        <!-- Blog Grid -->
+        <!-- <div class="row blog-grid">
                     <div class="col-lg-4 col-md-6 mb-4 blog-item" data-category="design">
                         <div class="blog-card">
                             <div class="blog-image">

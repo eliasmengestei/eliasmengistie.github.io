@@ -247,7 +247,11 @@ document.addEventListener('DOMContentLoaded', function () {
             var filter = this.getAttribute('data-filter');
             document.querySelectorAll('.portfolio-item').forEach(function (item) {
                 var cat = item.getAttribute('data-category');
-                item.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+                if (filter === 'all' || cat === filter) {
+                    item.classList.remove('portfolio-hidden');
+                } else {
+                    item.classList.add('portfolio-hidden');
+                }
             });
         });
     });
@@ -269,77 +273,88 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // --------------------------------------------------
-    // 13. CONTACT FORM – validation + toast
+    // 13. CONTACT FORM – validation + real email via Formspree
     // --------------------------------------------------
+    // HOW TO SET UP (free, takes 2 minutes):
+    // 1. Go to https://formspree.io and sign up
+    // 2. Click "New Form", give it a name, enter your email
+    // 3. Copy the form ID (looks like: xpwzabcd)
+    // 4. Replace YOUR_FORMSPREE_ID below with that ID
+    var FORMSPREE_ID = 'YOUR_FORMSPREE_ID';
+
     var contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             var isValid = true;
-            
-            // Get all form fields
+
             var fullname = document.getElementById('fullname');
-            var email = document.getElementById('email');
-            var subject = document.getElementById('subject');
-            var message = document.getElementById('message');
-            
-            // Clear previous validation
-            var inputs = [fullname, email, subject, message];
-            inputs.forEach(function(input) {
-                input.classList.remove('is-invalid');
-            });
-            
-            // Validate Full Name
-            if (!fullname.value.trim()) {
-                fullname.classList.add('is-invalid');
-                isValid = false;
-            }
-            
-            // Validate Email
+            var email    = document.getElementById('email');
+            var subject  = document.getElementById('subject');
+            var message  = document.getElementById('message');
+            var inputs   = [fullname, email, subject, message];
+
+            // Clear previous errors
+            inputs.forEach(function (input) { input.classList.remove('is-invalid'); });
+
+            // Validate
+            if (!fullname.value.trim()) { fullname.classList.add('is-invalid'); isValid = false; }
+
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!email.value.trim() || !emailRegex.test(email.value)) {
-                email.classList.add('is-invalid');
-                isValid = false;
+                email.classList.add('is-invalid'); isValid = false;
             }
-            
-            // Validate Subject
-            if (!subject.value.trim()) {
-                subject.classList.add('is-invalid');
-                isValid = false;
-            }
-            
-            // Validate Message
-            if (!message.value.trim()) {
-                message.classList.add('is-invalid');
-                isValid = false;
-            }
-            
-            // If validation passes
-            if (isValid) {
-                showToast('Thank you! Your message has been sent.');
-                this.reset();
-                // Clear validation classes
-                inputs.forEach(function(input) {
-                    input.classList.remove('is-invalid');
-                });
-            } else {
-                // Scroll to first error
+
+            if (!subject.value.trim()) { subject.classList.add('is-invalid'); isValid = false; }
+            if (!message.value.trim()) { message.classList.add('is-invalid'); isValid = false; }
+
+            if (!isValid) {
                 var firstError = contactForm.querySelector('.is-invalid');
-                if (firstError) {
-                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    firstError.focus();
-                }
+                if (firstError) { firstError.scrollIntoView({ behavior: 'smooth', block: 'center' }); firstError.focus(); }
+                return;
             }
+
+            // Send button loading state
+            var submitBtn = contactForm.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Sending...';
+
+            // Send to Formspree
+            fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+                method:  'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body:    JSON.stringify({
+                    name:    fullname.value.trim(),
+                    email:   email.value.trim(),
+                    subject: subject.value.trim(),
+                    message: message.value.trim()
+                })
+            })
+            .then(function (response) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Send Message';
+
+                if (response.ok) {
+                    showToast('✅ Message sent! I will get back to you soon.');
+                    contactForm.reset();
+                    inputs.forEach(function (input) { input.classList.remove('is-invalid'); });
+                } else {
+                    showToast('❌ Something went wrong. Please email me directly at mengesteielias@gmail.com');
+                }
+            })
+            .catch(function () {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Send Message';
+                showToast('❌ Network error. Please email me directly at mengesteielias@gmail.com');
+            });
         });
-        
+
         // Remove validation error on input
-        ['fullname', 'email', 'subject', 'message'].forEach(function(fieldId) {
+        ['fullname', 'email', 'subject', 'message'].forEach(function (fieldId) {
             var field = document.getElementById(fieldId);
             if (field) {
-                field.addEventListener('input', function() {
-                    this.classList.remove('is-invalid');
-                });
+                field.addEventListener('input', function () { this.classList.remove('is-invalid'); });
             }
         });
     }
