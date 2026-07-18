@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with HTML5, CSS3, Bootstrap 5, and JavaScript. Features a clean dark theme with smooth animations and an intuitive user interface.
 
-## 🌟 Features
+## Features
 
 - **Responsive Design**: Fully responsive across desktop, tablet, and mobile devices
 - **Modern UI/UX**: Clean, professional dark theme with teal accents
@@ -38,7 +38,7 @@ portfolio/
 └── README.md             # This file
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -89,7 +89,7 @@ portfolio/
      npx http-server
      ```
 
-## 🎨 Customization
+##  Customization
 
 ### Colors
 
@@ -122,7 +122,7 @@ To add or remove sections:
 2. Add/remove navigation link in the right navigation
 3. Update JavaScript in `js/script.js` if needed
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 - **Desktop**: 1024px and above
 - **Tablet**: 768px - 1023px
@@ -137,7 +137,7 @@ To add or remove sections:
 - **JavaScript (ES6+)** - Interactivity and animations
 - **Google Fonts** - Typography (Poppins)
 
-## 🌐 Browser Support
+##  Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
@@ -145,7 +145,7 @@ To add or remove sections:
 - Edge (latest)
 - Opera (latest)
 
-## 📧 Contact Form Integration
+## Contact Form Integration
 
 The contact form currently shows an alert. To integrate with a backend:
 
@@ -162,7 +162,7 @@ The contact form currently shows an alert. To integrate with a backend:
 ### Option 3: Custom Backend
 Update the fetch call in `js/script.js` with your API endpoint.
 
-## 🗺️ Google Maps Integration
+## Google Maps Integration
 
 To use your own location:
 
@@ -170,7 +170,7 @@ To use your own location:
 2. Generate your embed code
 3. Replace the iframe src in the Contact section
 
-## 📝 Adding Blog Posts
+##  Adding Blog Posts
 
 To add a new blog post:
 
@@ -191,7 +191,7 @@ To add a new blog post:
 </div>
 ```
 
-## 🎯 Performance Optimization
+##  Performance Optimization
 
 - Optimize images (use WebP format, compress images)
 - Minify CSS and JavaScript for production
@@ -199,11 +199,11 @@ To add a new blog post:
 - Use a CDN for libraries
 - Consider lazy loading for images
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👤 Author
+##  Author
 
 **Your Name**
 - Website: [yourwebsite.com](https://yourwebsite.com)
@@ -211,18 +211,18 @@ This project is open source and available under the [MIT License](LICENSE).
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 - GitHub: [@yourusername](https://github.com/yourusername)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Design inspiration from modern portfolio trends
 - Icons by [Font Awesome](https://fontawesome.com/)
 - Fonts by [Google Fonts](https://fonts.google.com/)
 
-## 📞 Support
+##  Support
 
 If you have any questions or need help with customization, feel free to reach out!
 
 ---
 
-**Made with ❤️ by [Your Name]**
+**Made with  by [ELIAS]**
 
 *Last Updated: July 2026*
