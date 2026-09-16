@@ -273,14 +273,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // --------------------------------------------------
-    // 13. CONTACT FORM – validation + real email via Formspree
+    // 13. CONTACT FORM – validation + real email via FormSubmit
     // --------------------------------------------------
-    // HOW TO SET UP (free, takes 2 minutes):
-    // 1. Go to https://formspree.io and sign up
-    // 2. Click "New Form", give it a name, enter your email
-    // 3. Copy the form ID (looks like: xpwzabcd)
-    // 4. Replace YOUR_FORMSPREE_ID below with that ID
-    var FORMSPREE_ID = 'YOUR_FORMSPREE_ID';
+    var FORM_ENDPOINT = 'https://formsubmit.co/ajax/mengesteielias7@gmail.com';
 
     var contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -320,15 +315,18 @@ document.addEventListener('DOMContentLoaded', function () {
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Sending...';
 
-            // Send to Formspree
-            fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+            // Send to FormSubmit
+            fetch(FORM_ENDPOINT, {
                 method:  'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body:    JSON.stringify({
                     name:    fullname.value.trim(),
                     email:   email.value.trim(),
                     subject: subject.value.trim(),
-                    message: message.value.trim()
+                    message: message.value.trim(),
+                    _subject: 'Portfolio message: ' + subject.value.trim(),
+                    _template: 'table',
+                    _honey: ''
                 })
             })
             .then(function (response) {
@@ -340,13 +338,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     contactForm.reset();
                     inputs.forEach(function (input) { input.classList.remove('is-invalid'); });
                 } else {
-                    showToast('❌ Something went wrong. Please email me directly at mengesteielias@gmail.com');
+                    showToast('❌ Something went wrong. Please email me directly at mengesteielias7@gmail.com');
                 }
             })
             .catch(function () {
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = '<i class="fas fa-paper-plane me-2"></i> Send Message';
-                showToast('❌ Network error. Please email me directly at mengesteielias@gmail.com');
+                showToast('❌ Network error. Please email me directly at mengesteielias7@gmail.com');
             });
         });
 
